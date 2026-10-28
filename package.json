@@ -1,0 +1,55 @@
+{
+  "name": "dsh-audio-player",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "一个 DSH 内的 MP3 音频播放器：用户自行导入喜欢的音乐，独立悬浮窗播放；如当前有启动动画（优先适配长征机启动动画），可开启启动动画同步播放并在动画结束时渐隐。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek-harness-desktop",
+    "audio",
+    "mp3",
+    "music",
+    "audio-player",
+    "floating-window",
+    "startup",
+    "long-march"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "INSTALL.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "docs",
+    "install.ps1",
+    "uninstall.ps1"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": "0.2.1-rc.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "author": "edgewalker6666",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edgewalker6666/dsh-audio-player.git"
+  },
+  "homepage": "https://github.com/edgewalker6666/dsh-audio-player#readme",
+  "bugs": {
+    "url": "https://github.com/edgewalker6666/dsh-audio-player/issues"
+  }
+}

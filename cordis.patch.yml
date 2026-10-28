@@ -1,0 +1,10 @@
+# dsh-audio-player — DSH bundle patch
+#
+# 标准安装方式（写进 profile 的 dsh.profile.bundles）：
+#   dsh plugin --profile web add dsh-audio-player
+#
+# 桌面端 profile 由 Electron 管理时，也可以把下面这行 insert 追加到
+# ~/.dsh/profiles/desktop/cordis.patch.yml（本插件就是这么装进桌面的）。
+- insert:
+    - id: dsh-audio-player
+      name: dsh-audio-player

@@ -1,0 +1,10 @@
+node_modules/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Local player data (never part of the plugin)
+tracks/
+library.json
+config.json
